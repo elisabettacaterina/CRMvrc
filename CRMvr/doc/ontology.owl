@@ -1,0 +1,1850 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/elisabettacaterina/CRMvr/"
+     xml:base="https://github.com/elisabettacaterina/CRMvr/"
+     xmlns:ldp="http://www.w3.org/ns/ldp#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="https://github.com/elisabettacaterina/CRMvr/">
+        <rdfs:comment xml:lang="en">Ontology for Virtual Reconstruction Processes (VRP) aligned to CIDOC CRM.</rdfs:comment>
+        <rdfs:label xml:lang="en">VRP version 1.0.0</rdfs:label>
+        <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
+        <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-24T12:10:19.888Z</prov:generatedAtTime>
+        <prov:wasAttributedTo rdf:resource="http://www.researchspace.org/resource/user/admin"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ldp#contains -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/ldp#contains"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#generatedAtTime -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#generatedAtTime"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAttributedTo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasAttributedTo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP10_has_component -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP10_has_component">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V2_Immaterial_Heritage"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V4_Find"/>
+        <rdfs:label xml:lang="en">has component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP10i_is_component_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP10i_is_component_of">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP10_has_component"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V4_Find"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V2_Immaterial_Heritage"/>
+        <rdfs:label xml:lang="en">is component of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP11_has_component -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP11_has_component">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP11i_is_component_of"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V3_Cultural_Heritage"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V4_Find"/>
+        <rdfs:label xml:lang="en">has component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP11i_is_component_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP11i_is_component_of">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V4_Find"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V3_Cultural_Heritage"/>
+        <rdfs:label xml:lang="en">is component of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP12_has_component -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP12_has_component">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V5_Component_Element"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V5_Component_Element"/>
+        <rdfs:label xml:lang="en">has component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP12i_is_component_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP12i_is_component_of">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP12_has_component"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V5_Component_Element"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V5_Component_Element"/>
+        <rdfs:label xml:lang="en">is component of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP13_is_hierarchically_identified -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP13_is_hierarchically_identified">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP13i_hierarchically_identifies"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V5_Component_Element"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V7_Hierarchy_Identifier"/>
+        <rdfs:label xml:lang="en">is hierarchically identified</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP13i_hierarchically_identifies -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP13i_hierarchically_identifies">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V7_Hierarchy_Identifier"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V5_Component_Element"/>
+        <rdfs:label xml:lang="en">hierarchically identifies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP14_is_identified_by -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP14_is_identified_by">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V5_Component_Element"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+        <rdfs:label xml:lang="en">is identified by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP14i_identifies -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP14i_identifies">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP14_is_identified_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V5_Component_Element"/>
+        <rdfs:label xml:lang="en">identifies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP15_has_digital_representation -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP15_has_digital_representation">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V5_Component_Element"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V8_3D_Object"/>
+        <rdfs:label xml:lang="en">has digital representation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP15i_is_digitally_represented -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP15i_is_digitally_represented">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP15_has_digital_representation"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V8_3D_Object"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V5_Component_Element"/>
+        <rdfs:label xml:lang="en">is digitally represented</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP16_used_as_derivation_source -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP16_used_as_derivation_source">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V6_3D_Find"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V8_3D_Object"/>
+        <rdfs:label xml:lang="en">used as derivation source</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP17_has_version_identifier -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP17_has_version_identifier">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V8_3D_Object"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V9_Version_Identifier"/>
+        <rdfs:label xml:lang="en">has version identifier</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP17i_is_version_identifier_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP17i_is_version_identifier_of">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP17_has_version_identifier"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V9_Version_Identifier"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V8_3D_Object"/>
+        <rdfs:label xml:lang="en">is version identifier of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP18_is_authored -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP18_is_authored">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V9_Version_Identifier"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V10_Author"/>
+        <rdfs:label xml:lang="en">is authored</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP19_is_authored -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP19_is_authored">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V8_3D_Object"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V10_Author"/>
+        <rdfs:label xml:lang="en">is authored</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP1_has_domain -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP1_has_domain">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP1i_is_domain_of"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V2_Immaterial_Heritage"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V1_Domain"/>
+        <rdfs:label xml:lang="en">has domain</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP1i_is_domain_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP1i_is_domain_of">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V1_Domain"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V2_Immaterial_Heritage"/>
+        <rdfs:label xml:lang="en">is domain of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP20_carried_out_by -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP20_carried_out_by">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP20i_performed"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V19_Uncertainty_Evaluation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V10_Author"/>
+        <rdfs:label xml:lang="en">carried out by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP20i_performed -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP20i_performed">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V10_Author"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V19_Uncertainty_Evaluation"/>
+        <rdfs:label xml:lang="en">performed</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP21_carried_out_by -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP21_carried_out_by">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V20_Accuracy_Evaluation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V10_Author"/>
+        <rdfs:label xml:lang="en">carried out by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP21i_performed -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP21i_performed">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP21_carried_out_by"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V10_Author"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V20_Accuracy_Evaluation"/>
+        <rdfs:label xml:lang="en">performed</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP22_assigned -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP22_assigned">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP22i_was_assigned_by"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V19_Uncertainty_Evaluation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V21_Uncertainty_Grade"/>
+        <rdfs:label xml:lang="en">assigned</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP22i_was_assigned_by -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP22i_was_assigned_by">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V21_Uncertainty_Grade"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V19_Uncertainty_Evaluation"/>
+        <rdfs:label xml:lang="en">was assigned by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP23_assigned -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP23_assigned">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP23i_was_assigned_by"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V20_Accuracy_Evaluation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V22_Accuracy_Grade"/>
+        <rdfs:label xml:lang="en">assigned</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP23i_was_assigned_by -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP23i_was_assigned_by">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V22_Accuracy_Grade"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V20_Accuracy_Evaluation"/>
+        <rdfs:label xml:lang="en">was assigned by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP24_assigned_uncertainty_to -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP24_assigned_uncertainty_to">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V19_Uncertainty_Evaluation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V8_3D_Object"/>
+        <rdfs:label xml:lang="en">assigned uncertainty to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP25_assigned_accuracy_to -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP25_assigned_accuracy_to">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V20_Accuracy_Evaluation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V8_3D_Object"/>
+        <rdfs:label xml:lang="en">assigned accuracy to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP26_assigned_uncertainty_to -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP26_assigned_uncertainty_to">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V19_Uncertainty_Evaluation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:label xml:lang="en">assigned uncertainty to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP27_assigned_accuracy_to -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP27_assigned_accuracy_to">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V20_Accuracy_Evaluation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:label xml:lang="en">assigned accuracy to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP28_has_morphological_representation -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP28_has_morphological_representation">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V8_3D_Object"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V16_Morphological_Representation"/>
+        <rdfs:label xml:lang="en">has morphological representation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP28i_morphologically_represents -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP28i_morphologically_represents">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP28_has_morphological_representation"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V16_Morphological_Representation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V8_3D_Object"/>
+        <rdfs:label xml:lang="en">morphologically represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP29_has_morphological_representation -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP29_has_morphological_representation">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V11_Geometrical_Representation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V16_Morphological_Representation"/>
+        <rdfs:label xml:lang="en">has morphological representation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP29i_morphologically_represents -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP29i_morphologically_represents">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP29_has_morphological_representation"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V16_Morphological_Representation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V11_Geometrical_Representation"/>
+        <rdfs:label xml:lang="en">morphologically represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP2_has_domain -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP2_has_domain">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V3_Cultural_Heritage"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V1_Domain"/>
+        <rdfs:label xml:lang="en">has domain</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP2i_is_domain_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP2i_is_domain_of">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP2_has_domain"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V1_Domain"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V3_Cultural_Heritage"/>
+        <rdfs:label xml:lang="en">is domain of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP30_has_geometrical_representation -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP30_has_geometrical_representation">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP30i_geometrically_represents"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V8_3D_Object"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V11_Geometrical_Representation"/>
+        <rdfs:label xml:lang="en">has geometrical representation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP30i_geometrically_represents -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP30i_geometrically_represents">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V11_Geometrical_Representation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V8_3D_Object"/>
+        <rdfs:label xml:lang="en">geometrically represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP31_has_dimension -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP31_has_dimension">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V8_3D_Object"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <rdfs:label xml:lang="en">has dimension</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP31i_is_dimension_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP31i_is_dimension_of">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP31_has_dimension"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V8_3D_Object"/>
+        <rdfs:label xml:lang="en">is dimension of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP32_is_identified_by -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP32_is_identified_by">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP32i_identifies"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V8_3D_Object"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+        <rdfs:label xml:lang="en">is identified by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP32i_identifies -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP32i_identifies">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V8_3D_Object"/>
+        <rdfs:label xml:lang="en">identifies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP33_has_reference_on -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP33_has_reference_on">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V11_Geometrical_Representation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:label xml:lang="en">has reference on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP33i_is_reference_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP33i_is_reference_of">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP33_has_reference_on"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V11_Geometrical_Representation"/>
+        <rdfs:label xml:lang="en">is reference of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP34_has_reference_on -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP34_has_reference_on">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP34i_is_reference_of"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V16_Morphological_Representation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:label xml:lang="en">has reference on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP34i_is_reference_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP34i_is_reference_of">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V16_Morphological_Representation"/>
+        <rdfs:label xml:lang="en">is reference of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP35_has_evidence_on -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP35_has_evidence_on">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP35i_is_evidence_of"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V11_Geometrical_Representation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:label xml:lang="en">has evidence on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP35i_is_evidence_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP35i_is_evidence_of">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V11_Geometrical_Representation"/>
+        <rdfs:label xml:lang="en">is evidence of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP36_has_evidence_on -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP36_has_evidence_on">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP36i_is_evidence_of"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V16_Morphological_Representation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:label xml:lang="en">has evidence on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP36i_is_evidence_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP36i_is_evidence_of">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V16_Morphological_Representation"/>
+        <rdfs:label xml:lang="en">is evidence of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP37_has_component -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP37_has_component">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP37i_is_component_of"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V11_Geometrical_Representation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V14_Profile"/>
+        <rdfs:label xml:lang="en">has component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP37i_is_component_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP37i_is_component_of">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V14_Profile"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V11_Geometrical_Representation"/>
+        <rdfs:label xml:lang="en">is component of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP38_has_component -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP38_has_component">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP38i_is_component_of"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V11_Geometrical_Representation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V15_Path"/>
+        <rdfs:label xml:lang="en">has component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP38i_is_component_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP38i_is_component_of">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V15_Path"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V11_Geometrical_Representation"/>
+        <rdfs:label xml:lang="en">is component of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP39_has_component -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP39_has_component">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V14_Profile"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V12_Primitive_Entity"/>
+        <rdfs:label xml:lang="en">has component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP39i_is_component_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP39i_is_component_of">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP39_has_component"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V12_Primitive_Entity"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V14_Profile"/>
+        <rdfs:label xml:lang="en">is component of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP3_has_type -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP3_has_type">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP3i_is_type_of"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V2_Immaterial_Heritage"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:label xml:lang="en">has type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP3i_is_type_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP3i_is_type_of">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V2_Immaterial_Heritage"/>
+        <rdfs:label xml:lang="en">is type of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP40_has_evidence_on -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP40_has_evidence_on">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V16_Morphological_Representation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V6_3D_Find"/>
+        <rdfs:label xml:lang="en">has evidence on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP40i_is_evidence_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP40i_is_evidence_of">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP40_has_evidence_on"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V6_3D_Find"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V16_Morphological_Representation"/>
+        <rdfs:label xml:lang="en">is evidence of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP41_is_identified_by -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP41_is_identified_by">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V12_Primitive_Entity"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+        <rdfs:label xml:lang="en">is identified by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP41i_identifies -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP41i_identifies">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP41_is_identified_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V12_Primitive_Entity"/>
+        <rdfs:label xml:lang="en">identifies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP42_has_sequence_identifier -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP42_has_sequence_identifier">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP42i_is_sequence_identifier_of"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V12_Primitive_Entity"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V13_Order_of_Sequence_Identifier"/>
+        <rdfs:label xml:lang="en">has sequence identifier</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP42i_is_sequence_identifier_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP42i_is_sequence_identifier_of">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V13_Order_of_Sequence_Identifier"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V12_Primitive_Entity"/>
+        <rdfs:label xml:lang="en">is sequence identifier of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP43_has_dimension -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP43_has_dimension">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP43i_is_dimension_of"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V14_Profile"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <rdfs:label xml:lang="en">has dimension</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP43i_is_dimension_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP43i_is_dimension_of">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V14_Profile"/>
+        <rdfs:label xml:lang="en">is dimension of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP44_has_dimension -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP44_has_dimension">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP44i_is_dimension_of"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V15_Path"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <rdfs:label xml:lang="en">has dimension</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP44i_is_dimension_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP44i_is_dimension_of">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V15_Path"/>
+        <rdfs:label xml:lang="en">is dimension of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP45_has_number_of_primitive_entities -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP45_has_number_of_primitive_entities">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V14_Profile"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E60_Number"/>
+        <rdfs:label xml:lang="en">has number of primitive entities</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP46_has_number_of_primitive_entities -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP46_has_number_of_primitive_entities">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V15_Path"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E60_Number"/>
+        <rdfs:label xml:lang="en">has number of primitive entities</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP47_has_type -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP47_has_type">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP47i_is_type_of"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V6_3D_Find"/>
+        <rdfs:label xml:lang="en">has type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP47i_is_type_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP47i_is_type_of">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V6_3D_Find"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:label xml:lang="en">is type of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP48_is_identified_by -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP48_is_identified_by">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+        <rdfs:label xml:lang="en">is identified by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP48i_identifies -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP48i_identifies">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP48_is_identified_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:label xml:lang="en">identifies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP49_has_type -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP49_has_type">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP49i_is_type_of"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:label xml:lang="en">has type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP49i_is_type_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP49i_is_type_of">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:label xml:lang="en">is type of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP4_has_type -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP4_has_type">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V3_Cultural_Heritage"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:label xml:lang="en">has type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP4i_is_type_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP4i_is_type_of">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP4_has_type"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V3_Cultural_Heritage"/>
+        <rdfs:label xml:lang="en">is type of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP50_is_interpreted_from -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP50_is_interpreted_from">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:label xml:lang="en">is interpreted from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP51_is_deducted_from -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP51_is_deducted_from">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:label xml:lang="en">is deducted from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP52_is_indicated_on -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP52_is_indicated_on">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:label xml:lang="en">is indicated on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP52i_indicates -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP52i_indicates">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP52_is_indicated_on"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <rdfs:label xml:lang="en">indicates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP53_has_dimension_equivalent -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP53_has_dimension_equivalent">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP53i_is_equivalent_dimension_of"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V23_Dimension_Equivalent"/>
+        <rdfs:label xml:lang="en">has dimension equivalent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP53i_is_equivalent_dimension_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP53i_is_equivalent_dimension_of">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V23_Dimension_Equivalent"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <rdfs:label xml:lang="en">is equivalent dimension of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP54_has_unit -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP54_has_unit">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V23_Dimension_Equivalent"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+        <rdfs:label xml:lang="en">has unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP54i_is_unit_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP54i_is_unit_of">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP54_has_unit"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V23_Dimension_Equivalent"/>
+        <rdfs:label xml:lang="en">is unit of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP55_has_value -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP55_has_value">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V23_Dimension_Equivalent"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E60_Number"/>
+        <rdfs:label xml:lang="en">has value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP55i_is_value_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP55i_is_value_of">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP55_has_value"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E60_Number"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V23_Dimension_Equivalent"/>
+        <rdfs:label xml:lang="en">is value of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP56_has_type -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP56_has_type">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP56i_is_type_of"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V24_Type_of_Dimension_Provenance"/>
+        <rdfs:label xml:lang="en">has type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP56i_is_type_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP56i_is_type_of">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V24_Type_of_Dimension_Provenance"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <rdfs:label xml:lang="en">is type of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP57_assigned -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP57_assigned">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V25_Evaluation_of_Dimension_Provenance"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V24_Type_of_Dimension_Provenance"/>
+        <rdfs:label xml:lang="en">assigned</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP57i_was_assigned_by -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP57i_was_assigned_by">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP57_assigned"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V24_Type_of_Dimension_Provenance"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V25_Evaluation_of_Dimension_Provenance"/>
+        <rdfs:label xml:lang="en">was assigned by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP58_has_type -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP58_has_type">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V16_Morphological_Representation"/>
+        <rdfs:label xml:lang="en">has type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP58i_is_type_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP58i_is_type_of">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP58_has_type"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V16_Morphological_Representation"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:label xml:lang="en">is type of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP59_has_type -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP59_has_type">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP59i_is_type_of"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:label xml:lang="en">has type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP59i_is_type_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP59i_is_type_of">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:label xml:lang="en">is type of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP5_is_identified_by -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP5_is_identified_by">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V2_Immaterial_Heritage"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+        <rdfs:label xml:lang="en">is identified by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP5i_identifies -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP5i_identifies">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP5_is_identified_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V2_Immaterial_Heritage"/>
+        <rdfs:label xml:lang="en">identifies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP60_has_reference_on -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP60_has_reference_on">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V2_Immaterial_Heritage"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:label xml:lang="en">has reference on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP60i_is_reference_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP60i_is_reference_of">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP60_has_reference_on"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V2_Immaterial_Heritage"/>
+        <rdfs:label xml:lang="en">is reference of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP61_has_reference_on -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP61_has_reference_on">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V3_Cultural_Heritage"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:label xml:lang="en">has reference on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP61i_is_reference_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP61i_is_reference_of">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP61_has_reference_on"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V17_Source"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V3_Cultural_Heritage"/>
+        <rdfs:label xml:lang="en">is reference of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP62_has_component -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP62_has_component">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP62i_is_component_of"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V15_Path"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V12_Primitive_Entity"/>
+        <rdfs:label xml:lang="en">has component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP62i_is_component_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP62i_is_component_of">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V12_Primitive_Entity"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V15_Path"/>
+        <rdfs:label xml:lang="en">is component of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP6_is_identified_by -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP6_is_identified_by">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V3_Cultural_Heritage"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+        <rdfs:label xml:lang="en">is identified by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP6i_identifies -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP6i_identifies">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP6_is_identified_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V3_Cultural_Heritage"/>
+        <rdfs:label xml:lang="en">identifies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP7_has_evidence_on -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP7_has_evidence_on">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V4_Find"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V3_Cultural_Heritage"/>
+        <rdfs:label xml:lang="en">has evidence on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP7i_is_evidence_of -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP7i_is_evidence_of">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP7_has_evidence_on"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V3_Cultural_Heritage"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V4_Find"/>
+        <rdfs:label xml:lang="en">is evidence of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP8_is_identified_by -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP8_is_identified_by">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V4_Find"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+        <rdfs:label xml:lang="en">is identified by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP8i_identifies -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP8i_identifies">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP8_is_identified_by"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V4_Find"/>
+        <rdfs:label xml:lang="en">identifies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP9_has_digital_representation -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP9_has_digital_representation">
+        <owl:inverseOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/VP9i_digitally_represents"/>
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V4_Find"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V3_Cultural_Heritage"/>
+        <rdfs:label xml:lang="en">has digital representation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/VP9i_digitally_represents -->
+
+
+    <owl:ObjectProperty rdf:about="https://github.com/elisabettacaterina/CRMvr/VP9i_digitally_represents">
+        <rdfs:domain rdf:resource="https://github.com/elisabettacaterina/CRMvr/V3_Cultural_Heritage"/>
+        <rdfs:range rdf:resource="https://github.com/elisabettacaterina/CRMvr/V4_Find"/>
+        <rdfs:label xml:lang="en">digitally represents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E21_Person -->
+
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing -->
+
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E42_Identifier -->
+
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E54_Dimension -->
+
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E55_Type -->
+
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit -->
+
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E60_Number -->
+
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E60_Number"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object -->
+
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item -->
+
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object -->
+
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object -->
+
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"/>
+    
+
+
+    <!-- http://www.cidoc-crm.org/extensions/crmsci/S5_Inference_Making -->
+
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/extensions/crmsci/S5_Inference_Making"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ldp#Resource -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ldp#Resource"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V10_Author -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V10_Author">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+        <rdfs:comment xml:lang="en">This class comprise instances of V10 author of the version of the 3D model of a V5 Component Element.</rdfs:comment>
+        <rdfs:label xml:lang="en">V10 Author</rdfs:label>
+        <skos:notation>V10</skos:notation>
+        <skos:prefLabel xml:lang="en">Author</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V11_Geometrical_Representation -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V11_Geometrical_Representation">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <rdfs:comment xml:lang="en">The class comprise the visual knowledge about the geometrical representation of a V5 Component Element.</rdfs:comment>
+        <rdfs:label xml:lang="en">V11 Geometrical Representation</rdfs:label>
+        <skos:notation>V11</skos:notation>
+        <skos:prefLabel xml:lang="en">Geometrical Representation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V12_Primitive_Entity -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V12_Primitive_Entity">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+        <rdfs:comment xml:lang="en">The class comprise the geometrical item that can be assumed as a geometrical primitive necessary for the construction of V14 Profile and V15 Path.</rdfs:comment>
+        <rdfs:label xml:lang="en">V12 Primitive Entity</rdfs:label>
+        <skos:notation>V12</skos:notation>
+        <skos:prefLabel xml:lang="en">Primitive Entity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V13_Order_of_Sequence_Identifier -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V13_Order_of_Sequence_Identifier">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+        <rdfs:comment xml:lang="en">The class comprise an identifier that declare the E42 Identifier assigned to the V12 Primitive Entity and its position in the geometrical sequence of primitive elements that create V14 profile or V15 Path.</rdfs:comment>
+        <rdfs:label xml:lang="en">V13 Order of Sequence Identifier</rdfs:label>
+        <skos:notation>V13</skos:notation>
+        <skos:prefLabel xml:lang="en">Order of Sequence Identifier</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V14_Profile -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V14_Profile">
+        <rdfs:subClassOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/V11_Geometrical_Representation"/>
+        <rdfs:comment xml:lang="en">The class comprise the geometrical representation of the physical features of a profile in the vertical plane containing both endpoints of the profile. The profile could be intended as a vertical section of the V11 Geometrical Representation.</rdfs:comment>
+        <rdfs:label xml:lang="en">V14 Profile</rdfs:label>
+        <skos:notation>V14</skos:notation>
+        <skos:prefLabel xml:lang="en">Profile</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V15_Path -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V15_Path">
+        <rdfs:subClassOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/V11_Geometrical_Representation"/>
+        <rdfs:comment xml:lang="en">The class comprise the geometrical representation of the physical features of a path in the horizontal plane containing both endpoints of the path.</rdfs:comment>
+        <rdfs:label xml:lang="en">V15 Path</rdfs:label>
+        <skos:notation>V15</skos:notation>
+        <skos:prefLabel xml:lang="en">Path</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V16_Morphological_Representation -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V16_Morphological_Representation">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <rdfs:comment xml:lang="en">The class comprise immaterial items related to knoledge about the morphological representation of a V5 component element.</rdfs:comment>
+        <rdfs:label xml:lang="en">V16 Morphological Representation</rdfs:label>
+        <skos:notation>V16</skos:notation>
+        <skos:prefLabel xml:lang="en">Morphological Representation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V17_Source -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V17_Source">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object"/>
+        <rdfs:comment xml:lang="en">This class comprise instances of V17 Sources and E31 Documents used in the Virtual Reconstruction process as evidence of reference of 3D modelling.</rdfs:comment>
+        <rdfs:label xml:lang="en">V17 Source</rdfs:label>
+        <skos:notation>V17</skos:notation>
+        <skos:prefLabel xml:lang="en">Source</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V18_Transparency_Inference_Making -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V18_Transparency_Inference_Making">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmsci/S5_Inference_Making"/>
+        <rdfs:comment xml:lang="en">This class comprises the action of making propositions and statements about particular geometrical or morphological representations of an V4 Find, its possible virtual representations (V6 3D Find), V17 sources and 3D objects. It includes evaluations and interpretations based on sources available for 3D reconstructions with the aim to fill the gap between documentation and 3D model obtained from them.</rdfs:comment>
+        <rdfs:label xml:lang="en">V18 Transparency Inference Making</rdfs:label>
+        <skos:notation>V18</skos:notation>
+        <skos:prefLabel xml:lang="en">Transparency Inference Making</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V19_Uncertainty_Evaluation -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V19_Uncertainty_Evaluation">
+        <rdfs:subClassOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/V18_Transparency_Inference_Making"/>
+        <rdfs:comment xml:lang="en">This class comprises the action of make propositions on data observable from a V17 Source or E31 Document by making evaluations based on the V21 Uncertainty Grade of informations on morphological and geometrical representations of the Cultural Heritage or Immaterial Heritage that we want to digitally reproduce.</rdfs:comment>
+        <rdfs:label xml:lang="en">V19 Uncertainty Evaluation</rdfs:label>
+        <skos:notation>V19</skos:notation>
+        <skos:prefLabel xml:lang="en">Uncertainty Evaluation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V1_Domain -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V1_Domain">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item"/>
+        <rdfs:comment xml:lang="en">This class includes all entities attributable to cultural heritage. Defines an area of interest or an area of which the object of reconstruction process is part of. Heritage includes buildings and historic places, monuments, artifacts, etc., including objects significant to the archaeology, architecture, science or technology of a specific culture.</rdfs:comment>
+        <rdfs:label xml:lang="en">V1 Domain</rdfs:label>
+        <skos:notation>V1</skos:notation>
+        <skos:prefLabel xml:lang="en">Domain</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V20_Accuracy_Evaluation -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V20_Accuracy_Evaluation">
+        <rdfs:subClassOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/V18_Transparency_Inference_Making"/>
+        <rdfs:comment xml:lang="en">This class comprises the action of make propositions on data observable from a V17 Source or E31 Document by making evaluations based on the V22 Accuracy Grade of informations on morphological and geometrical representations of the Cultural Heritage or Immaterial Heritage that it is possible to digitally reproduce.</rdfs:comment>
+        <rdfs:label xml:lang="en">V20 Accuracy Evaluation</rdfs:label>
+        <skos:notation>V20</skos:notation>
+        <skos:prefLabel xml:lang="en">Accuracy Evaluation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V21_Uncertainty_Grade -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V21_Uncertainty_Grade">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:comment xml:lang="en">This class comprise instances of V21 Unvcertainty Grade that could be assigned to a V17 Source.</rdfs:comment>
+        <rdfs:label xml:lang="en">V21 Uncertainty Grade</rdfs:label>
+        <skos:notation>V21</skos:notation>
+        <skos:prefLabel xml:lang="en">Uncertainty Grade</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V22_Accuracy_Grade -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V22_Accuracy_Grade">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:comment xml:lang="en">This class comprise instances of V22 Accuracy Grade that could be assigned to a V17 Source.</rdfs:comment>
+        <rdfs:label xml:lang="en">V22 Accuracy Grade</rdfs:label>
+        <skos:notation>V22</skos:notation>
+        <skos:prefLabel xml:lang="en">Accuracy Grade</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V23_Dimension_Equivalent -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V23_Dimension_Equivalent">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+        <rdfs:comment xml:lang="en">This class comprises equivalent value that can be attribute to an E54 Dimension according with the modelling software used. The 3D modelling software usually does not use the same E54 Dimension values and units indicated on a V17 source or E31 Document available.</rdfs:comment>
+        <rdfs:label xml:lang="en">V23 Dimension Equivalent</rdfs:label>
+        <skos:notation>V23</skos:notation>
+        <skos:prefLabel xml:lang="en">Dimension Equivalent</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V24_Type_of_Dimension_Provenance -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V24_Type_of_Dimension_Provenance">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:comment xml:lang="en">This class comprises Type of Dimensions in relation withw their reference V17 Sources or E31 Documents. In Virtual Reconstruction Processes are defined ony three enumerated Types of Dimension Provenance: Indicated, Deducted, Interpreted.</rdfs:comment>
+        <rdfs:label xml:lang="en">V24 Type of Dimension Provenance</rdfs:label>
+        <skos:notation>V24</skos:notation>
+        <skos:prefLabel xml:lang="en">Type of Dimension Provenance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V25_Evaluation_of_Dimension_Provenance -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V25_Evaluation_of_Dimension_Provenance">
+        <rdfs:subClassOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/V18_Transparency_Inference_Making"/>
+        <rdfs:comment xml:lang="en">This class comprises the action of make propositions about Dimension Provenance: connecting the E45 Dimension and its values with a V17 Source or E31 Document used for the Virtual Recontruction.</rdfs:comment>
+        <rdfs:label xml:lang="en">V25 Evaluation of Dimension Provenance</rdfs:label>
+        <skos:notation>V25</skos:notation>
+        <skos:prefLabel xml:lang="en">Evaluation of Dimension Provenance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V2_Immaterial_Heritage -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V2_Immaterial_Heritage">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+        <rdfs:comment xml:lang="en">This class comprises immaterial heritage that are documented in some way by any kind of source and that can be virtually reproduced.</rdfs:comment>
+        <rdfs:label xml:lang="en">V2 Immaterial Heritage</rdfs:label>
+        <skos:notation>V2</skos:notation>
+        <skos:prefLabel xml:lang="en">Immaterial Heritage</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V3_Cultural_Heritage -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V3_Cultural_Heritage">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing"/>
+        <rdfs:comment xml:lang="en">Cultural heritage includes buildings and historic places, monuments, artifacts, etc., including objects significant to the archaeology, architecture, science or technology of a specific culture that had a certain or documented physical existance.</rdfs:comment>
+        <rdfs:label xml:lang="en">V3 Cultural Heritage</rdfs:label>
+        <skos:notation>V3</skos:notation>
+        <skos:prefLabel xml:lang="en">Cultural Heritage</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V4_Find -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V4_Find">
+        <rdfs:subClassOf rdf:resource="https://github.com/elisabettacaterina/CRMvr/V3_Cultural_Heritage"/>
+        <rdfs:comment xml:lang="en">This class comprises physical evidence of the Heritage object that can be virtually reconstructed by SFM process (D2) or other methods.</rdfs:comment>
+        <rdfs:label xml:lang="en">V4 Find</rdfs:label>
+        <skos:notation>V4</skos:notation>
+        <skos:prefLabel xml:lang="en">Find</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V5_Component_Element -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V5_Component_Element">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+        <rdfs:comment xml:lang="en">This class comprises instances that are considered functional units for the whole object, accordind with the declared domain. It comprise V5 component elements that are themselves instances of V5 components elements. The V5 component element could be further analyzed into sub-components creating a hierarchy of part decomposition that is declared by V7 Hierarchy Identifier.</rdfs:comment>
+        <rdfs:label xml:lang="en">V5 Component Element</rdfs:label>
+        <skos:notation>V5</skos:notation>
+        <skos:prefLabel xml:lang="en">Component Element</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V6_3D_Find -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V6_3D_Find">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"/>
+        <rdfs:comment xml:lang="en">This class comprise the immaterial representation of V4 Find that are represented as a 3D model obtained by a D2 Digitization process.</rdfs:comment>
+        <rdfs:label xml:lang="en">V6 3D Find</rdfs:label>
+        <skos:notation>V6</skos:notation>
+        <skos:prefLabel xml:lang="en">3D Find</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V7_Hierarchy_Identifier -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V7_Hierarchy_Identifier">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+        <rdfs:comment xml:lang="en">This class comprise the level of hierachical aggregation of the component in relation with the whole element. Depending on the domain, its classifications and its controlled vocabulary the sub-elements that compose the artifact could variate creating a hierarchy of part decomposition that is declared by V7 Hierarchy Identifier.</rdfs:comment>
+        <rdfs:label xml:lang="en">V7 Hierarchy Identifier</rdfs:label>
+        <skos:notation>V7</skos:notation>
+        <skos:prefLabel xml:lang="en">Hierarchy Identifier</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V8_3D_Object -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V8_3D_Object">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/extensions/crmdig/D1_Digital_Object"/>
+        <rdfs:comment xml:lang="en">Three-dimensional (3D) models represent an artefact, using a collection of points in 3D space, connected by various geometric entities such as triangles, lines, curved surfaces, etc. A 3D digital object define the volume of the object that represent. In heritage virtual reconstructions is preferred the use of solid models that are usually built with constructive solid geometry.</rdfs:comment>
+        <rdfs:label xml:lang="en">V8 3D Object</rdfs:label>
+        <skos:notation>V8</skos:notation>
+        <skos:prefLabel xml:lang="en">3D Object</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/V9_Version_Identifier -->
+
+
+    <owl:Class rdf:about="https://github.com/elisabettacaterina/CRMvr/V9_Version_Identifier">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"/>
+        <rdfs:comment xml:lang="en">This class comprise an identifier that declare the E42 Identifier assigned to each 3D modelled version of the same V8 3D Object based on different evidence/reference.</rdfs:comment>
+        <rdfs:label xml:lang="en">V9 Version Identifier</rdfs:label>
+        <skos:notation>V9</skos:notation>
+        <skos:prefLabel xml:lang="en">Version Identifier</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://github.com/elisabettacaterina/CRMvr/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://github.com/elisabettacaterina/CRMvr/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ldp#Resource"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.researchspace.org/resource/system/Container">
+        <ldp:contains rdf:resource="https://github.com/elisabettacaterina/CRMvr/"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
