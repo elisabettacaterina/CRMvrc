@@ -11,9 +11,9 @@
   --accent-color: rgb(240 0 0 / 50%);
   --owl-bg: #F9F9F9;
   --link: #00c;
-  --link-visited: #609;
+  --link-visited:  white;
   --link-active: #c00;
-  --href-hover: #ffa;
+  --href-hover: #fff;
   --bg-hlist: #F4FFFF;
   --bg-description:rgb(242, 243, 244);
   --literal:green;
