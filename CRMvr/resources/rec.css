@@ -30,8 +30,8 @@ iframe {
 }
 
 :link { color: var(--link); background: transparent }
-:visited { color: var(--link-visited); background: transparent }
-a:active { color: var(--link-active); background: transparent }
+:visited { color: white; background: transparent }
+a:active { color: white; background: transparent }
 
 a:link img, a:visited img { border-style: none } /* no border on img links */
 
